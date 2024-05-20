@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="diar" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF4403FF"/>
+            <GradientStop Color="#FFFB1717" Offset="1"/>
+            <GradientStop Color="#FF8E0BA0" Offset="0.407"/>
+            <GradientStop Color="#FFDC4ECB" Offset="0.493"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="260" Margin="50,65,0,0" VerticalAlignment="Top" Width="320"/>
+        <Button Content="Nový zápis" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="50,338,0,0" Click="AddRecord_Click" Height="52"/>
+        <Button Content="Smazat zápis" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="230,338,0,0" Click="DeleteRecord_Click" Height="52"/>
+        <Image Margin="387,65,57,109" Source="/ahoj.jpg" Stretch="Fill"/>
+        <Label Content="TVŮJ OSOBNÍ DIÁŘ" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="36" Width="800" HorizontalContentAlignment="Center">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE14EF1" Offset="0.483"/>
+                    <GradientStop Color="#FFD21919" Offset="1"/>
+                    <GradientStop Color="#FFE600FF" Offset="0.103"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+    </Grid>
+</Window>
